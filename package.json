@@ -10,10 +10,14 @@
   },
   "dependencies": {
     "core-js": "^3.15.1",
+    "node-sass": "^6.0.1",
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.0",
-    "postcss": "^8.3.5"
+    "postcss": "^8.3.5",
+    "sass": "^1.43.2",
+    "sass-loader": "^10",
+    "tailwindcss-easing": "^0.1.3"
   }
 }
