@@ -47,7 +47,7 @@ export default {
       @apply text-lg font-medium;
     }
     > p {
-      @apply text-lg font-bold;
+      @apply text-3xl font-bold;
     }
   }
 }

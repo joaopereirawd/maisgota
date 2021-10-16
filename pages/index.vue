@@ -22,7 +22,18 @@ export default {
   created() {
     this.$nuxt.$on("toggle-modal", () => {
       this.showModal = !this.showModal;
+
+      if (this.showModal) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
     });
   },
 };
 </script>
+<style lang="scss" scoped>
+.no-scroll {
+  overflow: hidden;
+}
+</style>

@@ -44,7 +44,8 @@ export default {
 
   &__dialog {
     @apply absolute bg-white rounded-md p-10 text-center;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     min-height: 500px;
     left: 50%;
     top: 50%;

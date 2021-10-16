@@ -5,10 +5,13 @@
       <p>
         Salário Minimo: {{ cardSalary }}</p>
 
-        <FuelPriceStatic fuel-type="Gasóleo especial" fuel-price="1,799 €" />
+        <FuelPriceStatic 
+          fuel-type="Gasóleo" 
+          :fuel-price="cardDiesel" 
+        />
         <FuelPriceStatic
-          fuel-type="Gasolina especial 95"
-          fuel-price="1,939 €"
+          fuel-type="Gasolina 95"
+          :fuel-price="cardGasoline"
         />
       </p>
     </div>
@@ -22,6 +25,14 @@ export default {
       required: true,
     },
     cardSalary: {
+      type: String,
+      required: true,
+    },
+    cardGasoline: {
+      type: String,
+      required: true,
+    },
+    cardDiesel: {
       type: String,
       required: true,
     },
