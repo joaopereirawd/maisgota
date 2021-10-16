@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-import GasStation from "@/Icons/GasStation";
+import GasStation from "@/components/icons/GasStation";
 export default {
   components: { GasStation },
   props: {
@@ -49,21 +49,37 @@ export default {
 </script>
 <style lang="scss" scoped>
 .fuel-price {
-  @apply pl-10 pr-10;
   &__content {
     @apply flex flex-row;
   }
 
   &__icon {
     @apply mr-7;
+
+    ::v-deep svg {
+      height: 71px;
+      width: auto;
+
+      @screen md {
+        height: auto;
+        width: auto;
+      }
+    }
   }
 
   &__text {
     > small {
-      @apply text-lg font-medium;
+      @apply text-sm font-medium;
+
+      @screen md {
+        @apply text-lg font-medium;
+      }
     }
     > p {
-      @apply text-7xl font-bold;
+      @apply text-5xl font-bold;
+      @screen md {
+        @apply text-7xl font-bold;
+      }
     }
   }
 }

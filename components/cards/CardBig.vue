@@ -11,11 +11,17 @@
   margin: 0 auto;
 
   @apply relative w-full h-96 bg-white mb-20;
-  width: calc(100% - 100px);
+  width: calc(100% - 40px);
   box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.06);
-
+  @screen md {
+    @apply flex-row;
+  }
   &__content {
-    @apply flex flex-row justify-center items-center h-full;
+    @apply flex flex-col justify-center items-center h-full space-y-10;
+
+    @screen md {
+      @apply flex-row space-y-0 space-x-20;
+    }
   }
 }
 </style>

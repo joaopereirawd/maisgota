@@ -11,7 +11,10 @@
   </header>
 </template>
 <script>
-export default {};
+import Logo from "@/components/icons/Logo";
+export default {
+  components: { Logo },
+};
 </script>
 <style lang="scss" scoped>
 .header {
