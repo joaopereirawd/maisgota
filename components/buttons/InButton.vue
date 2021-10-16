@@ -1,0 +1,31 @@
+<template>
+  <a
+    href="javascript:window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://maisgota.com', '_blank', 'width=600,height=500');void(0);"
+    class="btn"
+  >
+    <svg
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M25 25H19.4747V16.2115C19.4747 13.9111 18.6104 12.3407 16.7098 12.3407C15.2561 12.3407 14.4476 13.4005 14.0713 14.4218C13.9302 14.7884 13.9523 15.299 13.9523 15.8097V25H8.47837C8.47837 25 8.54893 9.43204 8.47837 8.01691H13.9523V10.6823C14.2756 9.51688 16.0248 7.85362 18.8161 7.85362C22.2792 7.85362 25 10.2965 25 15.5568V25ZM2.94273 5.89262H2.90746C1.14358 5.89262 0 4.59435 0 2.9487C0 1.27104 1.17739 0 2.97654 0C4.77422 0 5.87958 1.26786 5.91486 2.94392C5.91486 4.58956 4.77422 5.89262 2.94273 5.89262ZM0.630569 8.01691H5.50329V25H0.630569V8.01691Z"
+        fill="#007EBB"
+      />
+    </svg>
+
+    LinkedIn
+  </a>
+</template>
+<style lang="scss" scoped>
+.btn {
+  @apply bg-white border border-solid border-gray text-black font-bold py-3 px-7 rounded-full  inline-flex items-center cursor-pointer w-full max-w-sm text-center justify-center mb-5;
+  > svg {
+    @apply mr-2;
+  }
+}
+</style>

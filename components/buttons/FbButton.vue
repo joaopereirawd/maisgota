@@ -1,0 +1,30 @@
+<template>
+  <a
+    href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://maisgota.com', '_blank', 'width=600,height=500');void(0);"
+    class="btn"
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 31 31"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M16.5581 31H1.71096C0.765746 31 0 30.2338 0 29.2889V1.71095C0 0.765864 0.765867 0 1.71096 0H29.2892C30.234 0 31 0.765864 31 1.71095V29.2889C31 30.2339 30.2339 31 29.2892 31H21.3896V18.9951H25.419L26.0224 14.3166H21.3896V11.3296C21.3896 9.97509 21.7657 9.052 23.7081 9.052L26.1855 9.05092V4.86642C25.7571 4.8094 24.2864 4.68202 22.5755 4.68202C19.0035 4.68202 16.5581 6.86232 16.5581 10.8663V14.3166H12.5183V18.9951H16.5581V31Z"
+        fill="#4367DC"
+      />
+    </svg>
+    Facebook
+  </a>
+</template>
+<style lang="scss" scoped>
+.btn {
+  @apply bg-white border border-solid border-gray text-black font-bold py-3 px-7 rounded-full  inline-flex items-center cursor-pointer w-full max-w-sm text-center justify-center mb-5;
+  > svg {
+    @apply mr-2;
+  }
+}
+</style>

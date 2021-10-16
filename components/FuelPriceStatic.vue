@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import GasStation from "@/Icons/GasStation";
+import GasStation from "@/components/icons/GasStation";
 export default {
   components: { GasStation },
   props: {

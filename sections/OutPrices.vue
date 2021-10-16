@@ -13,6 +13,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .out-prices {
-  @apply flex justify-center;
+  @apply flex justify-center flex-col space-y-10;
+  padding: 0 20px;
+
+  @screen md {
+    @apply flex-row space-y-0 space-x-10;
+  }
 }
 </style>
