@@ -13,9 +13,39 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Ex igimos Mais Gota!'
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'MaisGota',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: `/og-image.png`,
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Exigimos Mais Gota!',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: `https://maisgota.com`,
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
