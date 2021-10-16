@@ -18,9 +18,13 @@ export default {
         content: 'width=device-width, initial-scale=1'
       },
       {
+        name: 'google-site-verification',
+        content: 'qQGs67QhM6hMiSpSor3jxIf_nrl_cymZe6PXGRTdb60'
+      },
+      {
         hid: 'description',
         name: 'description',
-        content: 'Ex igimos Mais Gota!'
+        content: 'Exigimos Mais Gota!'
       },
       {
         hid: 'og:title',
@@ -30,12 +34,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `/og-image.png`,
+        content: '/og-image.png',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Exigimos Mais Gota!',
+        content: 'Exigimos mais Gota!',
       },
       {
         hid: 'og:url',
@@ -43,10 +47,22 @@ export default {
         content: `https://maisgota.com`,
       },
       {
+        hide: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        hide: 'twitter:image',
+        name: 'twitter:image',
+        content: '/og-image-tw.png'
+      },
+      {
         name: 'format-detection',
         content: 'telephone=no'
-      }
+      },
+
     ],
+
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },

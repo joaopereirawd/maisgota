@@ -1,6 +1,6 @@
 <template>
   <a
-    href="javascript:window.open('http://twitter.com/share?text=Exigimos mais Gota!&url=https://maisgota.com&hashtags=maisgota,exigimosmaisgota', '_blank', 'width=600,height=500');void(0);"
+    href="javascript:window.open('http://twitter.com/share?text=Exigimos mais Gota! @SIConline @SICNoticias @cmjornal @tvi24pt @tvi &url=https://maisgota.com&hashtags=maisgota,exigimosmaisgota', '_blank', 'width=600,height=500');void(0);"
     class="btn"
   >
     <svg
