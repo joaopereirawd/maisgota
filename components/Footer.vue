@@ -37,7 +37,10 @@ export default {
   }
 
   &__menu {
-    @apply mb-12;
+    @apply mb-12 max-w-xs text-center;
+    a {
+      @apply underline;
+    }
   }
 }
 </style>
