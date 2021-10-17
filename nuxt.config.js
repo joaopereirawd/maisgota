@@ -94,7 +94,7 @@ export default {
 
   publicRuntimeConfig: {
     googleAnalytics: {
-      id: 'G-5GX33G546M'
+      id: 'UA-129160199-4'
     }
   },
 }
