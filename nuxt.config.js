@@ -91,7 +91,10 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  googleAnalytics: {
-    id: 'G-5GX33G546M'
-  }
+
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: 'G-5GX33G546M'
+    }
+  },
 }

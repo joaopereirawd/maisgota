@@ -45,7 +45,7 @@ export default {
   box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.06);
 
   &__content {
-    @apply flex flex-col;
+    @apply flex flex-col items-center;
 
     > h2 {
       @apply text-lg font-semibold text-center;
