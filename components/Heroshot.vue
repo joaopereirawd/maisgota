@@ -3,13 +3,13 @@
     <div class="heroshot__content">
       <h1>Exigimos Mais Gota!</h1>
       <p>
-        Portugal é dos países da União Europeia que tem os combustíveis mais
-        caros! </br>
+        Portugal é o <span class="font-extrabold">TERCEIRO</span> país com a
+        gasolina mais cara da Europa.
       </p>
     </div>
-    <a class="heroshot__arrow" href="#card">
+    <div class="heroshot__arrow">
       <img src="~/assets/arrow-down.svg" />
-    </a>
+    </div>
   </section>
 </template>
 <script>
