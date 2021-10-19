@@ -4,17 +4,19 @@
       <div class="footer__logo">
         <Logo />
       </div>
-      <div class="footer__menu">
+      <div class="footer__button">
+        <Button />
+      </div>
+      <small>Web site em atualização.</small></br>
+
+      <nav class="footer__menu">
         <p>
-          Também podes dar o teu contributo aqui
+          Podes contribuir aqui:
           <a href="https://github.com/joaopereirawd/maisgota" target="__blank"
             >Github</a
           >
         </p>
-      </div>
-      <div class="footer__button">
-        <Button />
-      </div>
+      </nav>
     </div>
   </footer>
 </template>
@@ -36,8 +38,12 @@ export default {
     @apply mb-12;
   }
 
+  &__button {
+    @apply mb-12;
+  }
+
   &__menu {
-    @apply mb-12 max-w-xs text-center;
+    @apply max-w-xs text-center flex items-center justify-center;
     a {
       @apply underline;
     }

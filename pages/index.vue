@@ -10,7 +10,7 @@
 </template>
 <script>
 import CardBig from "@/components/cards/CardBig";
-import OutPrices from "@/sections/OutPrices.vue";
+import OutPrices from "@/components/sections/OutPrices.vue";
 import ShareModal from "../components/Modal/ShareModal";
 export default {
   components: { CardBig, OutPrices, ShareModal },

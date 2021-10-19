@@ -1,20 +1,13 @@
 <template>
   <div class="fuel-price">
-    <p v-if="$fetchState.pending">Loading....</p>
-    <p v-else-if="$fetchState.error">Error while fetching Petrol Stores</p>
-    <div
-      else
-      class="fuel-price__content"
-      v-for="(station, index) in stations.resultado"
-      :key="index"
-    >
+    <div class="fuel-price__content">
       <div class="fuel-price__icon">
         <GasStation width="104" height="104" />
       </div>
 
       <div class="fuel-price__text">
-        <small>{{ station.Combustivel }}</small>
-        <p>{{ station.Preco }}</p>
+        <p class="fuel-price__name">{{ FuelType }}</p>
+        <p class="fuel-price__price">{{ FuelPrice }}</p>
       </div>
     </div>
   </div>
@@ -25,32 +18,20 @@ export default {
   components: { GasStation },
   props: {
     FuelType: {
-      type: Number,
+      type: String,
       required: true,
     },
-  },
-  data() {
-    return {
-      stations: [],
-    };
-  },
-  async fetch() {
-    const url = `https://precoscombustiveis.dgeg.gov.pt/api/PrecoComb/PesquisarPostos?idsTiposComb=${this.FuelType}&idDistrito=1&idsMunicipios=&qtdPorPagina=1&pagina=1&orderDesc=1`;
-    const petrolStations = await fetch(url).then((response) => {
-      if (response.ok) {
-        return response.json();
-      }
-      throw new Error(response.status);
-    });
-
-    this.stations = petrolStations;
+    FuelPrice: {
+      type: String,
+      required: true,
+    },
   },
 };
 </script>
 <style lang="scss" scoped>
 .fuel-price {
   &__content {
-    @apply flex flex-row;
+    @apply flex flex-row flex-wrap items-center;
   }
 
   &__icon {
@@ -69,18 +50,30 @@ export default {
 
   &__text {
     > small {
-      @apply text-sm font-medium;
+      @apply text-gray;
+    }
+  }
+  &__name {
+    @apply text-sm font-medium;
 
-      @screen md {
-        @apply text-lg font-medium;
-      }
+    @screen md {
+      @apply text-lg font-medium;
     }
-    > p {
+  }
+
+  &__price {
+    @apply text-5xl font-bold;
+    @screen md {
       @apply text-5xl font-bold;
-      @screen md {
-        @apply text-7xl font-bold;
-      }
     }
+  }
+
+  &__bubble {
+    @apply bg-white;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
   }
 }
 </style>
