@@ -1,6 +1,6 @@
 <template>
   <a
-    href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://maisgota.com', '_blank', 'width=600,height=500');void(0);"
+    href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=https://maisgota.com', '_blank', 'width=600,height=500');void(0);"
     class="btn"
   >
     <svg

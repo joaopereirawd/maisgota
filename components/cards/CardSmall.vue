@@ -41,7 +41,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .card {
-  @apply relative inline-block bg-white p-12 rounded-lg;
+  @apply relative inline-block bg-white rounded-lg px-20 py-12;
   box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.06);
 
   &__content {

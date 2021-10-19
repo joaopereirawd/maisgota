@@ -18,7 +18,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .header {
-  @apply absolute w-full h-20 pt-24 pl-5 pr-5 z-20;
+  @apply absolute w-full h-20 pl-5 pr-5 z-20;
+
+  @screen md {
+    @apply pt-24;
+  }
 
   &__content {
     @apply flex justify-between items-center h-full rounded max-w-screen-xl;
