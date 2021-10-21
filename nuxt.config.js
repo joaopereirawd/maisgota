@@ -44,7 +44,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: `https://maisgota.com`,
+        content: 'https://www.maisgota.com/',
       },
       {
         hide: 'twitter:card',
